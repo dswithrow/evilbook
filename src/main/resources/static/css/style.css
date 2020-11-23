@@ -1,0 +1,138 @@
+* {
+	margin: 0;
+	padding: 0;
+	outline: 1px dotted palevioletred;
+}
+
+body {
+	background-color: #060641;
+	background-image: linear-gradient(#060641 80%, #0d0d8c);
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.wrapper {
+	background-color: aliceblue;
+	min-width: 600px;
+	max-height: 100vh;
+	padding: 20px;
+}
+
+input[type="submit"] {
+	background-color: #060641;
+	background-image: linear-gradient(#060641, #0d0d8c, #060641);
+	color: aliceblue;
+	padding: 3px 6px;
+	border: none;
+	border-radius: 3px;
+	box-shadow: 2px 2px 0 0 lightblue;
+}
+input[type="submit"].green-button {
+	background-color: #154106;
+	background-image: linear-gradient(#154106, #2d8c0d, #154106);
+	box-shadow: 2px 2px 0 0 lightgreen;
+}
+
+table {
+	width: 100%;
+}
+
+textarea{
+	width: 100%;
+	min-height: 100px;
+	resize: none;
+	text-align: left;
+}
+
+.avatar {
+	display: inline-block;
+}
+
+span.name {
+	display: block;
+	font-weight: bold;
+}
+
+/*
+	Header styling
+*/
+header {
+	height: 100px;
+	padding: 20px;
+}
+
+h5 {
+	width: 85%;
+	display: inline-block;
+}
+h6 {
+	width: 13%;
+	display: inline-block;
+	text-align: right;
+}
+
+/*
+	Sidebar styling
+*/
+.sidebar {
+	min-width: 200px;
+	max-width: 400px;
+	min-height: 400px;
+	max-height: 90vh;
+	padding: 10px;
+	display: inline-block;
+}
+.user-links {
+	text-align: center;
+}
+
+.sidebar hr {
+	width: 95%;
+}
+.profile-picture {
+	width: 90%;
+}
+
+/*
+	Main styling
+*/
+main {
+	min-width: 400px;
+	min-height: 400px;
+	max-height: 90vh;
+	padding: 10px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+/*
+	Feed Styling
+*/
+.new-post, .new-comment {
+	text-align: right;
+}
+
+
+/*
+	Form styling
+*/
+div[class$="-form"] {
+	width: 460px;
+	display: inline-block;
+}
+
+
+/*
+	Quick styles
+*/
+.bold {
+	font-weight: bold;
+}
+
+.center {
+	text-align: center;
+}
+
+.right {
+	text-align: right;
+}
