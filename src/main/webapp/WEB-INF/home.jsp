@@ -54,12 +54,14 @@
 					<div class="post" id="${ post.id }">
 						<img class="avatar" src="/img/placeholder-a.png" alt='<c:out value="${ post.user.bio.displayName }"/>' />
 						<div class="chain">
-							<span class="name"><c:out value="${ post.user.bio.displayName }"/></span>
-							<c:out value="${ post.body }"/>
+							<div class="post-body">
+								<span class="name"><c:out value="${ post.user.bio.displayName }"/></span>
+								<c:out value="${ post.body }"/>
+							</div>
 							<c:forEach items="${ post.comments }" var="comment">
 								<div class="comment">
 									<img class="avatar" src="/img/placeholder-a.png" alt='<c:out value="${ comment.user.bio.displayName }"/>' />
-									<div class="body">
+									<div class="comment-body">
 										<span class="name"><c:out value="${ comment.user.bio.displayName }"/></span>
 										<p><c:out value="${ comment.body }"/></p>
 									</div>
